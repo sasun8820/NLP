@@ -1,2 +1,2 @@
 # Natural-Language-Processing
- Natural Language Processing course from QMSS 2023 Fall Semester
+ Natural Language Processing (NLP) course from QMSS 2023 Fall Semester at Columbia University
