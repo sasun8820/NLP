@@ -64,7 +64,7 @@ tmp_pca = read_pickle(path, "pca")
 tmp_model = read_pickle(path, "my_model")          
 
 
-## Modifying my_reddit Function Including Loaded Pickle Files ## 
+## Modifying my_reddit Function Including Loaded Pickle files ## 
 for comment in reddit.subreddit(subreddit_channel).stream.comments():
     tmp_df = get_reddit_data(comment)
     cleaned_text = clean_txt(tmp_df["body"])
@@ -78,4 +78,4 @@ for comment in reddit.subreddit(subreddit_channel).stream.comments():
     result_df = pd.DataFrame(predict_prob, index=tmp_model.classes_, columns=["probability"])
     
     print(f"Class Label Prediction is {y_pred}\n Likelihood Score is ")
-    print(result_df)
+    print(result_df) 
